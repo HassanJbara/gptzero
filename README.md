@@ -20,10 +20,10 @@ python main.py
 #### Code
 
 ```python
-from gptzero import GPT2PPL
+from gptzero import GPTZero
 
-zero_gpt = GPT2PPL()
+zero_gpt = GPTZero()
 text = "I love you"
 
-zero_gpt.getScore(text)
+zero_gpt.get_score(text)
 ```  

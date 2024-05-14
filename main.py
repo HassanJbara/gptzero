@@ -1,7 +1,7 @@
 import argparse
 import json
 
-from gptzero import GPT2PPL
+from gptzero import GPTZero
 
 
 def parse_args():
@@ -13,11 +13,11 @@ def parse_args():
     return args
 
 def main(args):
-    zero_gpt = GPT2PPL()
+    zero_gpt = GPTZero()
 
     with open(args.input_file, "r") as f:
         text = f.read().strip()
-        print(zero_gpt.getScore(text))
+        print(zero_gpt.get_score(text))
 
 
 if __name__ == '__main__':

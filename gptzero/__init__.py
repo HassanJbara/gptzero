@@ -1,3 +1,3 @@
-from .detector import GPT2PPL
+from .detector import GPTZero
 
 __all__ = ["GPTZero"]
